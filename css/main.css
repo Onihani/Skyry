@@ -1,0 +1,168 @@
+@font-face {
+  font-family: "Baloo";
+  src: url(../font/Baloo2-Regular.ttf);
+}
+* {
+font-family: "Baloo";
+}
+
+input:focus, button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.overlay {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.125), rgba(0, 0, 0, 0.125)), url('../images/weather/cool-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+nav .navbar-brand span {
+  font-size: 1.6rem;
+  text-shadow: rgba(255,255,255,.1) -1px -1px 1px, rgba(0,0,0,.5) 1px 1px 1px;
+}
+
+.user-date-time .time {
+  font-size: 2.0rem;
+  margin: 0;
+  padding: 0;
+}
+
+.user-date-time .date {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  margin: 0;
+  padding: 0;
+}
+
+.current-weather-card {
+  background: rgba(20, 64, 90, 0.3);
+}
+
+.current-weather-card .current-area-temp {
+  font-size: 1.9rem;
+}
+
+.current-weather-card .current-area-temp p {
+  font-size: 1.0rem;
+  font-weight: bolder;
+}
+
+.current-weather-card .more-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 25px;
+  background: rgba(20, 64, 90, 0.28);
+  border-radius: 20px;
+}
+
+.current-weather-card .more-info .heading {
+  text-decoration: wavy;
+  letter-spacing: 2px;
+  font-family: cursive;
+  text-align: left;
+}
+
+.current-weather-card ul .list-group-item {
+  background: inherit;
+}
+
+.weather-info.shadow-inner ul li span {
+  font-weight: bolder;
+}
+
+.current-weather-card .more-info .hourly-weather-info {
+  width: 60%;
+  min-height: 140px;
+  padding: 4px 6px;
+  display: grid;
+  grid-gap: 4px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.current-weather-card .more-info .hourly-weather-info .hourly-item {
+  background: rgba(0, 0, 0, 0.170);
+  border-radius: 7% 93% 13% 87% / 94% 9% 91% 6%;
+  padding: 4px 7px
+}
+
+.weekly-weather-card {
+  border-radius: 6px;
+  padding: 10px;
+  background: rgba(20, 64, 90, 0.3);
+}
+
+.weekly-weather-card #accordionExample .card {
+  background: rgba(20, 64, 90, 0.5);
+}
+
+.weekly-weather-card #accordionExample .card-header {
+  color: seashell;
+  background: rgba(20, 64, 90, 0.6);
+}
+
+.weekly-weather-card #accordionExample .card-header button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.weekly-weather-card #accordionExample .card .card-body ul .list-group-item {
+  background: inherit;
+}
+
+/* ================= media queries here ================ */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  nav.main-nav .logo span {
+    display: none;
+  }
+
+  nav.main-nav .custom-button span{
+    display: none;
+  }
+
+  nav.main-nav #search-form {
+    width: 180px;
+  }
+
+  nav.main-nav #search-form input {
+    width: 140px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  nav.main-nav .logo span {
+    display: none;
+  }
+
+  nav.main-nav .custom-button span{
+    display: none;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  nav.main-nav .logo span {
+    display: inline;
+  }
+
+  nav.main-nav .custom-button span{
+    display: inline;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
